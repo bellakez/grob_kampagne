@@ -1,0 +1,1034 @@
+img {
+  max-width: 100%;
+}
+video {
+  max-width: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* _____________FOR MOBIL______________________ */
+@media only screen and (max-width: 600px) {
+  h1 {
+    text-align: center;
+    font-family: "League Gothic", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 5px;
+    margin: 15px;
+    letter-spacing: 1.6px;
+  }
+  h2 {
+    text-align: center;
+    font-family: "Lexend Tera", sans-serif;
+    font-size: 1rem;
+    padding: 5px;
+    margin: 20px;
+  }
+  h3 {
+    font-family: "Lexend Tera", sans-serif;
+    font-size: 0.9rem;
+    padding: 5px;
+    margin: 20px;
+  }
+  p {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 0.8rem;
+    padding: 5px;
+    margin: 20px;
+  }
+  label {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 0.9rem;
+    padding: 5px;
+    margin: 20px;
+  }
+
+  /*SECTION1*/
+  .section1 {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /*SECTION 2 - tekst og video under*/
+  .section2 {
+    padding: 5px;
+    margin: 5px;
+  }
+  .serie {
+    grid-column: 1/2;
+  }
+  /*________________SECTION MÅSKE_____________*/
+
+  /*________________SECTION 3_____________*/
+  /*baggrundsbillede*/
+  .card_pic {
+    background-image: url(grob_pics/happy.jpg);
+    min-height: 350px;
+
+    /* centrere billedet pænt */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  #teaser h3 {
+    padding: 5px;
+    margin: 5px;
+  }
+
+  /* teksten flugter på venstre side */
+  .card_text {
+    text-align: left;
+  }
+
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+    text-shadow: 7px 2px 9px rgba(0, 0, 0, 0.75);
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /*KORT animation*/
+  #kort {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-image: url(svg/kort.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 80%;
+    left: 40%;
+    width: 30%;
+    animation-name: kort_sprite_kf;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+  }
+  /*keyframe, hvorfra den transformere fra 0%-100%, i form af den rotere om sim egen akse*/
+  @keyframes kort_sprite_kf {
+    0% {
+      transform: rotateY(360deg);
+    }
+  }
+  .kommentar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*styling af commentar og email box*/
+  #email {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(183, 183, 183);
+    opacity: 0.5;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    margin: 20px;
+  }
+  .comment {
+    height: 100px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(183, 183, 183);
+    opacity: 0.5;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    margin: 20px;
+  }
+  /*styling af knap "send"*/
+  #knap {
+    border-radius: 25px;
+    padding: 10px 15px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(190, 69, 255);
+    padding: 5px;
+    margin: 10px;
+  }
+  #knap:hover {
+    cursor: pointer;
+  }
+  /*________________SECTION 4____________*/
+  .section4 {
+    padding: 5px;
+    margin: 5px;
+  }
+
+  /*________________SECTION 5____________*/
+  .section5 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 5px;
+    margin: 5px;
+  }
+  /*ramme så iphone ligger i midten*/
+  #iphonebox {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*styling af iphome instagram*/
+  #iphone {
+    height: 550px;
+    width: 300px;
+    border-radius: 30px;
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 2px;
+  }
+  /*teater grobs navn ista*/
+  #navn {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  #menu_prikker {
+    grid-column: 3/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu_prikker h4 {
+    color: rgb(255, 255, 255);
+    text-align: right;
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  /*#profile {
+      grid-row: 1/1;
+      grid-column: 1/1;
+      background-color: rgb(255, 255, 255);
+      width: 90px;
+      height: 90px;
+      border-radius: 50px;
+  }*/
+  /*kamera til iphone*/
+  #kamera {
+    grid-column: 3/3;
+    grid-row: 1/2;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(47, 47, 47);
+    border-radius: 50px;
+    margin: 15px;
+  }
+  /*speaker*/
+  #speaker {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 68px;
+    height: 10px;
+    background-color: rgb(47, 47, 47);
+    border-radius: 25px;
+    margin: 15px;
+  }
+  #tilbage {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*iphone tekst instagram*/
+  #navn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h4 {
+    font-family: "Fira Sans", sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+  }
+
+  /*IKONER 1-4 og box omkring, for at de ligger i midten*/
+  /*IKON*/
+  #ikonbox {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  .ikon {
+    width: 24%;
+  }
+  /*IKON1*/
+  #ikonbox1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    right: 0;
+    align-items: end;
+  }
+  .ikon1 {
+    width: 24%;
+  }
+  /*IKON3*/
+  #ikonbox3 {
+    grid-column: 3/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    right: 0;
+    align-items: end;
+  }
+  .ikon3 {
+    width: 24%;
+  }
+
+  /*billeder i grid iphone*/
+  /*række1*/
+  .img1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .img2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .img3 {
+    grid-column: 3/3;
+    grid-row: 2/3;
+  }
+  /*række2*/
+  .img4 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .img5 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .img6 {
+    grid-column: 3/3;
+    grid-row: 3/4;
+  }
+  /*række3*/
+  .img7 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .img8 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+  .img9 {
+    grid-column: 3/3;
+    grid-row: 4/5;
+  }
+  /*række4*/
+  .img10 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .img10 img {
+    border-bottom-left-radius: 30px;
+  }
+  .img11 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+  .img12 {
+    grid-column: 3/3;
+    grid-row: 5/6;
+  }
+  .img12 img {
+    border-bottom-right-radius: 30px;
+  }
+  /*FOOTER*/
+
+  footer {
+    margin-top: 20px;
+  }
+  #footer h3 {
+    text-align: center;
+  }
+  #footer p {
+    text-align: center;
+  }
+  #ikoner {
+    display: flex;
+  }
+  .ikon_pic {
+    width: 70%;
+  }
+  #kontakt {
+    margin-top: 20px;
+  }
+  #adresse {
+    margin-top: 20px;
+  }
+  .ikon_pic {
+    width: 70%;
+  }
+
+  /* sektion om årskort = teksten flugter til venstre side */
+  .text {
+    text-align: left;
+  }
+  #logo_box {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #logo {
+    width: 30%;
+    padding: 20px;
+  }
+  .section6 {
+    padding: 0;
+    margin: 2px;
+  }
+}
+
+/* _______________________FOR SKÆRM____________________________
+________________________________________________________________
+________________________________________________________________
+______________________________________________________________*/
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    text-align: center;
+    font-family: "League Gothic", sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+    letter-spacing: 1.6px;
+    padding: 10px;
+    margin: 20px;
+  }
+  h2 {
+    text-align: center;
+    font-family: "Lexend Tera", sans-serif;
+    font-size: 1.7rem;
+    padding: 10px;
+    margin: 20px;
+  }
+  h3 {
+    font-family: "Lexend Tera", sans-serif;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin: 5px;
+  }
+  p {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 5px;
+  }
+  label {
+    font-family: "Fira Sans", sans-serif;
+  }
+  /*SECTION1*/
+  .section1 {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /*SECTION 2 - tekst og video under*/
+  .section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    margin: 30px;
+  }
+  .serie {
+    grid-column: 1/2;
+  }
+  /*________________SECTION MÅSKE_____________*/
+
+  #maybe {
+    padding: 20px;
+    margin: 30px;
+  }
+  .teaser {
+    grid-column: 2/3;
+  }
+
+  /*________________SECTION 3_____________
+  .section3 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }*/
+
+  /*billede af piger griner, som baggrundsbillede*/
+  .card_pic {
+    background-image: url(grob_pics/happy.jpg);
+    min-height: 400px;
+
+    /* centrere billedet pænt */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  /* teksten flugter på venstre side */
+  .card_text {
+    text-align: left;
+  }
+
+  .wrapperen {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+    text-shadow: 7px 2px 9px rgba(0, 0, 0, 0.75);
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /*KORT animation*/
+  #kort {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-image: url(svg/kort.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 115%;
+    left: 40%;
+    width: 25%;
+    animation-name: kort_sprite_kf;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+  }
+  /*keyframe, hvorfra den transformere fra 0%-100%, i form af den rotere om sim egen akse*/
+  @keyframes kort_sprite_kf {
+    0% {
+      transform: rotate3d(0, -1, 0.5, 20deg);
+      transform-style: preserve-3d;
+    }
+    25% {
+      transform: rotate3d(0, -1, 0.5, 110deg);
+      transform-style: preserve-3d;
+    }
+    50% {
+      transform: rotate3d(0, -1, 0.5, 200deg);
+    }
+    75% {
+      transform: rotate3d(0, -1, 0.5, 290deg);
+      transform-style: preserve-3d;
+    }
+    100% {
+      transform: rotate3d(0, -1, 0.5, 380deg);
+      transform-style: preserve-3d;
+    }
+  }
+  .kommentar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*styling af commentar og email box*/
+  #email {
+    width: 200px;
+    padding: 10px;
+    border-radius: 16px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.8;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 5px;
+  }
+  .comment {
+    height: 100px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 16px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.8;
+    border: 2px solid rgb(255, 255, 255);
+    margin: 5px;
+  }
+  /*styling af knap "send"*/
+  #knap {
+    border-radius: 16px;
+    padding: 10px 15px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    margin: 40px;
+  }
+  #knap:hover {
+    cursor: pointer;
+  }
+
+  /* gennemsigtigheden på baggrundsbilledet på årskortet */
+  .card_pic {
+    opacity: 0.8;
+  }
+
+  /*________________SECTION 4____________*/
+  /*SECTION 4 - kolonne med 2 tekster, derfor auto minmax*/
+  .sektion4_h2 {
+    margin-top: 55px;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  .section4 {
+    padding: 20px;
+    margin: 30px;
+  }
+  /*________________SECTION 4a____________*/
+  #instastory {
+    padding: 20px;
+    margin: 30px;
+  }
+
+  /*________________SECTION 5____________*/
+
+  .section5_h2 {
+    margin-top: 55px;
+  }
+  .section5 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 5px;
+    margin-top: 45px;
+  }
+  /*ramme så iphone ligger i midten*/
+  #iphonebox {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*styling af iphome instagram*/
+  #iphone {
+    height: 700px;
+    width: 400px;
+    border-radius: 30px;
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 2px;
+  }
+  /*teater grobs navn ista*/
+  #navn {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  #menu_prikker {
+    grid-column: 3/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu_prikker h4 {
+    color: rgb(255, 255, 255);
+    text-align: right;
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  /*#profile {
+      grid-row: 1/1;
+      grid-column: 1/1;
+      background-color: rgb(255, 255, 255);
+      width: 90px;
+      height: 90px;
+      border-radius: 50px;
+  }*/
+  /*kamera til iphone*/
+  #kamera {
+    grid-column: 3/3;
+    grid-row: 1/2;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(47, 47, 47);
+    border-radius: 50px;
+    margin: 15px;
+  }
+  /*speaker*/
+  #speaker {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 100px;
+    height: 10px;
+    background-color: rgb(47, 47, 47);
+    border-radius: 25px;
+    margin: 15px;
+  }
+  #tilbage {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*iphone tekst instagram*/
+  #navn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h4 {
+    font-family: "Fira Sans", sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+  }
+  /*________________STORY CIRKLER OG PLACERING I IPHONE______________
+  #profile {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  .story {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(47, 47, 47);
+    border-radius: 50px;
+  }
+
+  #profile1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  .story1 {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(47, 47, 47);
+    border-radius: 50px;
+  }
+
+  #profile2 {
+    grid-column: 3/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  .story2 {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(47, 47, 47);
+    border-radius: 50px;
+  }
+ ________________________________________________________________*/
+
+  /*IKONER 1-4 og box omkring, for at de ligger i midten*/
+  /*IKON*/
+  #ikonbox {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  .ikon {
+    width: 24%;
+  }
+  /*IKON1*/
+  #ikonbox1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    right: 0;
+    align-items: end;
+  }
+  .ikon1 {
+    width: 24%;
+  }
+  /*IKON3*/
+  #ikonbox3 {
+    grid-column: 3/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    right: 0;
+    align-items: end;
+  }
+  .ikon3 {
+    width: 24%;
+  }
+
+  /*billeder i grid iphone*/
+  /*række1*/
+  .img1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .img2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .img3 {
+    grid-column: 3/3;
+    grid-row: 2/3;
+  }
+  /*række2*/
+  .img4 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .img5 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .img6 {
+    grid-column: 3/3;
+    grid-row: 3/4;
+  }
+  /*række3*/
+  .img7 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .img8 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+  .img9 {
+    grid-column: 3/3;
+    grid-row: 4/5;
+  }
+  /*række4*/
+  .img10 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  .img10 img {
+    border-bottom-left-radius: 30px;
+  }
+  .img11 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+  .img12 {
+    grid-column: 3/3;
+    grid-row: 5/6;
+  }
+  .img12 img {
+    border-bottom-right-radius: 30px;
+  }
+  /*FOOTER*/
+  #footer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #ikoner {
+    display: flex;
+  }
+  .ikon_pic {
+    width: 70%;
+  }
+  #kontakt {
+    margin-top: 20px;
+  }
+  #adresse {
+    margin-top: 20px;
+  }
+  #logo_box {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #logo {
+    width: 30%;
+    padding: 50px;
+  }
+  .section6 {
+    padding: 20px;
+    padding: 5px;
+    margin: 60px;
+  }
+}
+
+/*SECTION 5 - 4 billeder af skuespillere*/
+.section4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+/*________________SECTION 4a____________*/
+#instastory {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.section6 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+.section6 img {
+  border-radius: 15px;
+}
+
+.sektion6_h2 {
+  margin-top: 55px;
+}
+
+/*DENNE KODE ER TAGET FRA W3 SCHOOLS OG HAR DERFOR ANDRE NAVNE*/
+
+* {
+  box-sizing: border-box;
+}
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 300px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+#section4a {
+  margin: 50px;
+}
+#section4a img {
+  border-radius: 20px;
+}
