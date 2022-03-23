@@ -40,7 +40,7 @@
             autoplay=""
             loop=""
             muted=""
-            src="http://bellakezia.dk/kea/eksamen/ommig_vid.mp4"
+            src="http://lilleninse.dk/kea/semester2/tema8/splash_video.mp4"
           ></video>
         </div>
         <img src="" alt="splashbillede" />
@@ -58,65 +58,84 @@
             sin date ved teater Grob og ser en fantastisk forestilling, men
             angående daten så....
           </p>
-          <video src=""></video>
+        </div>
+        <div id="hele_video">
+          <div class="videobox">
+            <video
+              width="420"
+              height="340"
+              controls
+              src="http://bellakezia.dk/kea2/tema8/final_teater_grob.mp4"
+            ></video>
+          </div>
         </div>
       </section>
       <!--MÅSKE SECTION???-->
+      
       <section id="maybe">
-        <div class="teaser">
-          <h3>EP.2 UDKOMMER 1/4-2022</h3>
+        
+        <div id="teaser_wrapper">
+        <div>
+          <img src="grob_pics/tri.jpg" alt="">
         </div>
+        <div class="teaser">
+          <h3>EP.2 - UDKOMMER 1/4-2022</h3>
+          <p>I næste afsnit af kampagne-serien kan man følge Frida, som nu skal på date med Torben. Hvad vil Anna sige? og hvem er Frida? For at få et smugkig kan du følge med på vores Instagram.</p>
+        </div>
+      </div>
       </section>
       <!--SECTION3-->
       <h2>VIND ET ÅRSKORT</h2>
+      <section class="section3">
+      
+      <div class="skygge">
+        <div class="skyggebox">
+        <img src="grob_pics/skygge.png" alt="skygge">
+      </div>
+      </div>
+      </section>
+
       <div id="kort_wrapper">
         <div id="kort"></div>
       </div>
       <section class="section3">
-        <div class="container">
-            <div class="card_pic">
-              <!--<img src="grob_pics/happy.jpg" alt="gruppe piger" />-->
-            </div>
-          <!--wrapper sig rundt om text og kommentarbox-->
-          <div class="centered">
-            <div class="wrapperen">
-              <div class="text">
-                <div class="card_text">
-                  <p>
-                    Du kan nu få chancen for at vinde et årskort til teater Grob
-                    til en værdi ml. 400-600 kr.! Det eneste du skal gøre er, at
-                    skrive din mail i feltet og et svar til følgende spørgsmål:
-                  </p>
-                  <p>Hvor skal Anna og Torben på date henne?</p>
-                </div>
-              </div>
-              <!---KOMMENTAR felt hvor man kan skrive email og kommentar-->
-              <div class="kommentar">
-                <div class="kommentarbox">
-                  <form action="/action_page.php">
-                    <label for="email">Indtast email</label>
-                    <input type="email" id="email" name="email" />
-                  </form>
-                  <form action="/form/submit" method="POST">
-                    <label for="comment">Skriv svar her</label>
-                    <textarea class="comment">Skriv svar her...</textarea>
-                    <div>
+      <div id="baggrundsbillede">
+        <div id="container3">
+        <div class="textbox3">
+          <h3>DELTAG I KONKURENCEN OG DU KAN VÆRE DEN HELDIGE VINDER AF ET ÅRSKORT</h3>
+         <p>
+                  Du kan nu få chancen for at vinde et årskort til teater Grob
+                  til en værdi ml. 400-600 kr.! Det eneste du skal gøre er, at
+                  skrive din mail i feltet og et svar til følgende spørgsmål:
+                </p>
+                <p><strong>Hvor skal Anna og Torben på date henne?</strong></p>
+      </div>
+                    <!---KOMMENTAR felt hvor man kan skrive email og kommentar-->
+            <div class="kommentar">
+              <div class="kommentarbox">
+                <form action="/action_page.php">
+                  <label for="email">Indtast email</label>
+                  <input type="email" id="email" name="email" />
+                </form>
+                <form action="/form/submit" method="POST">
+                  <label for="comment">Skriv svar her</label>
+                  <textarea class="comment">Skriv svar her...</textarea>
+                  <div>
                     <input id="knap" type="submit" name="submit" value="Send" />
                   </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+                </form>
+
+      </div>
+    </div>
+    </div>
+</section>
       <!--SECTION4-->
       <div class="sektion4_h2">
         <h2>TEATER GROB</h2>
-      </div>
       <section class="section4">
         <div class="wrapper">
           <div class="textbox">
+            <h3>CAFE OG HYGGE</h3>
             <p>
               Vores hyggelige bar i teatrets foyer har åben 1 time før
               forestillingen starter. Her kan du afhente dine reserverede
@@ -137,6 +156,7 @@
             </p>
           </div>
           <div class="textbox">
+            <h3>TIL GROB</h3>
             <p>
               Billetter skal købes ved henvendelse til billet@grob.dk Der er to
               måder at komme ind i teatersalen på. Den ene er gennem gården,
@@ -259,33 +279,41 @@
       </section>
       <!--SECTION4a-->
       <!--DENNE KODE ER TAGET FRA W3 SCHOOLS OG HAR DERFOR ANDRE NAVNE-->
+      <h2>STORIES</h2>
       <section id="section4a">
-        <h2>STORIES</h2>
         <div class="slideshow-container">
           <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
+            <div class="numbertext">  GROB  </div>
             <img src="story/fridavsanna.png" style="width: 100%" />
           </div>
 
           <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
+            <div class="numbertext">  GROB  </div>
             <img src="story/andreamedtekst.png" style="width: 100%" />
           </div>
 
           <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="story/vind.png" style="width: 100%" />
+            <div class="numbertext">  GROB  </div>
+            <!--<img src="story/vind.png" style="width: 100%" />-->
+                    <video
+            autoplay=""
+            loop=""
+            muted=""
+            style="border-radius: 12px;"
+            src="http://bellakezia.dk/kea2/tema8/iphone.mp4"
+          ></video>
           </div>
 
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br />
 
-        <div style="text-align: center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
+          <br />
+
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
         </div>
       </section>
       <!--SECTION5-->

@@ -67,15 +67,21 @@ video {
   .serie {
     grid-column: 1/2;
   }
+  #hele_video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 10px;
+  }
   /*________________SECTION MÅSKE_____________*/
 
   /*________________SECTION 3_____________*/
-  /*baggrundsbillede*/
-  .card_pic {
-    background-image: url(grob_pics/happy.jpg);
-    min-height: 350px;
 
-    /* centrere billedet pænt */
+  #baggrundsbillede {
+    background-image: url(grob_pics/happy.jpg);
+
+    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -85,23 +91,18 @@ video {
     padding: 5px;
     margin: 5px;
   }
-
-  /* teksten flugter på venstre side */
-  .card_text {
-    text-align: left;
+  .section3 h3 {
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 3px 7px rgba(0, 0, 0, 0.8);
   }
 
-  .container {
-    position: relative;
-    text-align: center;
-    color: white;
-    text-shadow: 7px 2px 9px rgba(0, 0, 0, 0.75);
+  .section3 p {
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 3px 7px rgba(0, 0, 0, 0.8);
   }
-  .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  .section3 label {
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 3px 7px rgba(0, 0, 0, 0.8);
   }
 
   /*KORT animation*/
@@ -112,14 +113,18 @@ video {
     background-image: url(svg/kort.svg);
     background-size: 100%;
     background-repeat: no-repeat;
-    top: 80%;
-    left: 40%;
+    /*top: 115%;*/
+    top: 176%;
+    left: 37%;
     width: 30%;
     animation-name: kort_sprite_kf;
     animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-fill-mode: both;
     animation-timing-function: linear;
+  }
+  .section3 {
+    margin-top: 60px;
   }
   /*keyframe, hvorfra den transformere fra 0%-100%, i form af den rotere om sim egen akse*/
   @keyframes kort_sprite_kf {
@@ -464,6 +469,12 @@ ______________________________________________________________*/
   .serie {
     grid-column: 1/2;
   }
+  #hele_video {
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   /*________________SECTION MÅSKE_____________*/
 
   #maybe {
@@ -474,44 +485,34 @@ ______________________________________________________________*/
     grid-column: 2/3;
   }
 
-  /*________________SECTION 3_____________
+  /*________________SECTION 3_____________*/
   .section3 {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-  }*/
+    margin-top: 100px;
+  }
+  .section3 h3 {
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 3px 7px rgba(0, 0, 0, 0.8);
+  }
 
-  /*billede af piger griner, som baggrundsbillede*/
-  .card_pic {
+  .section3 p {
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 3px 7px rgba(0, 0, 0, 0.8);
+  }
+  .section3 label {
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 3px 7px rgba(0, 0, 0, 0.8);
+  }
+
+  #baggrundsbillede {
     background-image: url(grob_pics/happy.jpg);
-    min-height: 400px;
 
-    /* centrere billedet pænt */
+    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
   }
-  /* teksten flugter på venstre side */
-  .card_text {
-    text-align: left;
-  }
 
-  .wrapperen {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-  .container {
-    position: relative;
-    text-align: center;
-    color: white;
-    text-shadow: 7px 2px 9px rgba(0, 0, 0, 0.75);
-  }
-  .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
   /*KORT animation*/
   #kort {
     position: absolute;
@@ -520,8 +521,8 @@ ______________________________________________________________*/
     background-image: url(svg/kort.svg);
     background-size: 100%;
     background-repeat: no-repeat;
-    top: 115%;
-    left: 40%;
+    top: 220%;
+    left: 38%;
     width: 25%;
     animation-name: kort_sprite_kf;
     animation-duration: 8s;
@@ -551,6 +552,7 @@ ______________________________________________________________*/
       transform-style: preserve-3d;
     }
   }
+
   .kommentar {
     display: flex;
     justify-content: center;
@@ -562,7 +564,7 @@ ______________________________________________________________*/
     padding: 10px;
     border-radius: 16px;
     background-color: rgb(255, 255, 255);
-    opacity: 0.8;
+    opacity: 0.7;
     border: 2px solid rgb(255, 255, 255);
     margin: 5px;
   }
@@ -572,7 +574,7 @@ ______________________________________________________________*/
     padding: 10px;
     border-radius: 16px;
     background-color: rgb(255, 255, 255);
-    opacity: 0.8;
+    opacity: 0.7;
     border: 2px solid rgb(255, 255, 255);
     margin: 5px;
   }
@@ -1028,7 +1030,45 @@ img {
 }
 #section4a {
   margin: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
 }
 #section4a img {
   border-radius: 20px;
+}
+
+/*________________SECTION 3_____________*/
+#container3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 30px;
+}
+
+#story_vid {
+  border-radius: 30px;
+  width: 300px;
+  height: 537px;
+}
+.numbertext {
+  font-family: "Lexend Tera", sans-serif;
+  font-size: 0.9rem;
+  background-color: rgb(0, 0, 0);
+  border-radius: 9px;
+}
+#teaser_wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 30px;
+}
+.skyggebox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skygge img {
+  width: 60%;
+  height: 200px;
 }
