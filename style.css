@@ -532,7 +532,7 @@ ______________________________________________________________*/
     background-image: url(svg/kort.svg);
     background-size: 100%;
     background-repeat: no-repeat;
-    top: 220%;
+    top: 228%;
     left: 38%;
     width: 25%;
     animation-name: kort_sprite_kf;
@@ -619,8 +619,8 @@ ______________________________________________________________*/
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
   .section4 {
-    padding: 20px;
     margin: 30px;
+    padding: 40px;
   }
   /*________________SECTION 4a____________*/
   #instastory {
@@ -906,8 +906,6 @@ ______________________________________________________________*/
 .section4 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  margin: 30px;
-  padding: 40px;
 }
 /*________________SECTION 4a____________*/
 #instastory {
@@ -1089,7 +1087,7 @@ img {
   align-items: center;
 }
 .skygge img {
-  width: 60%;
+  width: 40%;
   height: 200px;
 }
 
@@ -1099,7 +1097,6 @@ img {
 }
 
 #myImg {
-  border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
