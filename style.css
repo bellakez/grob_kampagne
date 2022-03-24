@@ -105,6 +105,10 @@ video {
     text-shadow: 4px 3px 7px rgba(0, 0, 0, 0.8);
   }
 
+  .knap_box1 {
+    display: flex;
+    justify-content: center;
+  }
   /*KORT animation*/
   #kort {
     position: absolute;
@@ -164,7 +168,7 @@ video {
     border-radius: 25px;
     padding: 10px 15px;
     background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(190, 69, 255);
+    opacity: 0.9;
     padding: 5px;
     margin: 10px;
   }
@@ -197,6 +201,9 @@ video {
     width: 300px;
     border-radius: 30px;
     background-color: rgb(0, 0, 0);
+    box-shadow: 5px 10px 24px 1px rgba(0, 0, 0, 0.66);
+    -webkit-box-shadow: 5px 10px 24px 1px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 5px 10px 24px 1px rgba(0, 0, 0, 0.66);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -463,8 +470,8 @@ ______________________________________________________________*/
   .section2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 20px;
-    margin: 30px;
+    padding: 30px;
+    margin: 40px;
   }
   .serie {
     grid-column: 1/2;
@@ -505,12 +512,16 @@ ______________________________________________________________*/
 
   #baggrundsbillede {
     background-image: url(grob_pics/happy.jpg);
-
+    height: 500px;
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+  }
+  .knap_box1 {
+    display: flex;
+    justify-content: right;
   }
 
   /*KORT animation*/
@@ -557,6 +568,8 @@ ______________________________________________________________*/
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px;
+    margin: 40px;
   }
   /*styling af commentar og email box*/
   #email {
@@ -639,6 +652,9 @@ ______________________________________________________________*/
     width: 400px;
     border-radius: 30px;
     background-color: rgb(0, 0, 0);
+    box-shadow: 5px 10px 24px 1px rgba(0, 0, 0, 0.66);
+    -webkit-box-shadow: 5px 10px 24px 1px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 5px 10px 24px 1px rgba(0, 0, 0, 0.66);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -857,6 +873,8 @@ ______________________________________________________________*/
   #footer {
     display: flex;
     justify-content: space-evenly;
+    margin: 20px;
+    padding: 30px;
   }
   #ikoner {
     display: flex;
@@ -875,12 +893,11 @@ ______________________________________________________________*/
     justify-content: space-evenly;
   }
   #logo {
-    width: 30%;
+    width: 25%;
     padding: 50px;
   }
   .section6 {
-    padding: 20px;
-    padding: 5px;
+    padding: 50px;
     margin: 60px;
   }
 }
@@ -889,6 +906,8 @@ ______________________________________________________________*/
 .section4 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  margin: 30px;
+  padding: 40px;
 }
 /*________________SECTION 4a____________*/
 #instastory {
@@ -1043,7 +1062,8 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px;
-  padding: 30px;
+  margin: 30px;
+  padding: 40px;
 }
 
 #story_vid {
@@ -1071,4 +1091,108 @@ img {
 .skygge img {
   width: 60%;
   height: 200px;
+}
+
+.knap_box1 {
+  display: flex;
+  justify-content: right;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+/*_________________MODAL_______________________*/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
 }
